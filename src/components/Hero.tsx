@@ -13,7 +13,7 @@ export default function Hero(): React.ReactElement {
         >
           <HeroScene />
         </Canvas>
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-50/80 via-white/60 to-white" aria-hidden />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_70%_at_50%_40%,rgba(248,250,252,0.95),rgba(248,250,252,0.4)_50%,transparent)]" aria-hidden />
       </div>
 
       {/* Content */}

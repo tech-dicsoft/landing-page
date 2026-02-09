@@ -1,3 +1,36 @@
+# DIC SOFT — Landing Page
+
+Landing page SPA cho DIC SOFT (Digital Innovation Computing Solutions), dùng React + Vite + Tailwind CSS.
+
+## Chạy local
+
+```bash
+npm install
+npm run dev
+```
+
+## Deploy lên GitHub Pages
+
+1. **Bật GitHub Pages bằng Actions**  
+   Vào repo → **Settings** → **Pages** → **Build and deployment** → Source: **GitHub Actions**.
+
+2. **Push code**  
+   Mỗi lần push lên nhánh `main`, workflow sẽ tự build và deploy. Lần chạy đầu có thể cần chọn lại branch `main` trong Settings → Pages.
+
+3. **URL site**  
+   Dạng: `https://<username>.github.io/<tên-repo>/` (ví dụ: `https://yourname.github.io/landing-page/`).
+
+Workflow dùng file `.github/workflows/deploy-pages.yml`, build với `VITE_BASE_PATH` = tên repo nên không cần sửa config khi đổi tên repo.
+
+### Build giống GitHub Pages trên máy (kiểm tra trước khi push)
+
+- **PowerShell:** `$env:VITE_BASE_PATH="landing-page"; npm run build`
+- **Bash:** `VITE_BASE_PATH=landing-page npm run build`
+
+Sau đó chạy `npm run preview -- --base /landing-page/` để xem bản build (thay `landing-page` bằng tên repo nếu khác).
+
+---
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
