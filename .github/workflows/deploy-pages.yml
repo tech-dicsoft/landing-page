@@ -4,7 +4,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [master]
+    branches: [main, master]
   workflow_dispatch:
 
 permissions:
@@ -19,6 +19,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VITE_BASE_PATH: landing-page
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,8 +36,6 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          VITE_BASE_PATH: landing-page
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
