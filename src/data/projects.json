@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Acc Platform",
+    "description": "Low-code platform for ERP/PLM in Taiwan.",
+    "stack": ["Spring Boot", "ReactJs", "AWS"],
+    "location": "Taiwan"
+  },
+  {
+    "title": "ai.io",
+    "description": "AI-powered fitness and training app.",
+    "stack": ["NextJS", "ElectronJS"],
+    "location": "UK"
+  },
+  {
+    "title": "Management Pro",
+    "description": "Airport inventory and supply management.",
+    "stack": [],
+    "location": "Vietnam"
+  },
+  {
+    "title": "Acc-HRM",
+    "description": "Human resources management system.",
+    "stack": [],
+    "location": null
+  },
+  {
+    "title": "Fun-CRM",
+    "description": "Game CRM platform.",
+    "stack": [],
+    "location": "Singapore"
+  }
+]
