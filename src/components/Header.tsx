@@ -16,7 +16,7 @@ export default function Header(): React.ReactElement {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         <a href="#" className="flex items-center gap-2">
           <img
-            src="/dicsoft-logo.png"
+            src={`${import.meta.env.BASE_URL}dicsoft-logo.png`}
             alt="DIC SOFT"
             className="h-9 w-auto"
           />
